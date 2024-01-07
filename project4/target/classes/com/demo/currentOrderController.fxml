@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="707.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.controller.CurrentOrderController">
+   <children>
+      <SplitPane dividerPositions="0.19925512104283055" layoutX="242.0" layoutY="134.0" orientation="VERTICAL" prefHeight="539.0" prefWidth="708.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="315.0" layoutY="30.0" prefHeight="45.0" prefWidth="105.0" text="Order Number" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.17411764705882352" layoutX="264.0" layoutY="114.0" orientation="VERTICAL" prefHeight="427.0" prefWidth="706.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="13.0" prefHeight="45.0" prefWidth="105.0" text="Order Number" />
+                              <TextField fx:id="number" layoutX="112.0" layoutY="23.0" prefHeight="16.0" prefWidth="135.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <SplitPane dividerPositions="0.7514450867052023" layoutX="206.0" layoutY="106.0" orientation="VERTICAL" prefHeight="348.0" prefWidth="704.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <TreeView fx:id="dataList" layoutX="151.0" layoutY="7.0" onMouseClicked="#onSelect" prefHeight="257.0" prefWidth="701.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <Text layoutX="24.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtotal: $" />
+                                          <TextField fx:id="subTotal" layoutX="82.0" layoutY="8.0" prefHeight="26.0" prefWidth="127.0" />
+                                          <Text layoutX="230.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Tax: $" wrappingWidth="65.45574951171875" />
+                                          <TextField fx:id="sales" layoutX="290.0" layoutY="8.0" />
+                                          <Text layoutX="24.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Total: $" wrappingWidth="104.99998977780342" />
+                                          <TextField fx:id="totalPrice" layoutX="98.0" layoutY="46.0" />
+                                          <Button fx:id="remove" layoutX="517.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#reomvePizza" prefHeight="32.0" prefWidth="135.0" text="Remove Pizza" />
+                                          <Button fx:id="place" layoutX="517.0" layoutY="43.0" mnemonicParsing="false" onMouseClicked="#placeOrder" prefHeight="32.0" prefWidth="135.0" text="Place Order" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

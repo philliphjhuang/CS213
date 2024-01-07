@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-style: none;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.controller.MenuController">
+   <children>
+      <SplitPane dividerPositions="0.24874371859296482" layoutX="220.0" layoutY="100.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" style="-fx-border-style: none;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-border-style: none;">
+               <children>
+                  <Label prefHeight="250.0" prefWidth="300.0" text="RU Pizza" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="258.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" style="-fx-font-size: 30px; -fx-padding: 0 0 0 275px; -fx-text-fill: red;" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-border-style: none;">
+               <children>
+                  <SplitPane fx:id="split1" dividerPositions="0.5050335570469798" layoutX="120.0" layoutY="49.0" prefHeight="296.0" prefWidth="598.0" style="-fx-border-style: none;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-border-style: none;" styleClass="anchor-pane">
+                           <children>
+                              <SplitPane dividerPositions="0.5" layoutX="44.0" layoutY="38.0" orientation="VERTICAL" prefHeight="294.0" prefWidth="267.0" style="-fx-border-style: none;" styleClass="anchor-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane cache="true" cacheHint="SPEED" depthTest="DISABLE" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-border-style: none;" styleClass="anchor-pane">
+                                       <children>
+                                          <ImageView fx:id="SpecialtyPizzas" fitHeight="300.0" fitWidth="300.0" layoutX="60.0" layoutY="40.0" onMouseClicked="#SpecialtyPizzasClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="200.0" AnchorPane.bottomAnchor="0.0">
+                                             <image>
+                                                <Image url="@pic/menu/SpecialtyPizzas.png" />
+                                             </image>
+                                          </ImageView>
+                                           <Label prefHeight="90.0" prefWidth="90.0" text="Specialty Pizzas" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="270.0" style="-fx-font-size: 15px" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-border-style: none;" styleClass="anchor-pane">
+                                       <children>
+                                          <ImageView fx:id="image3" fitHeight="175.0" fitWidth="175.0" layoutX="60.0" layoutY="40.0" onMouseClicked="#currentOrderClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="250.0">
+                                             <image>
+                                                 <Image url="@pic/menu/CurrentOrder.png" />
+                                             </image></ImageView>
+                                           <Label prefHeight="90.0" prefWidth="90.0" text="Current Order" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0" style="-fx-font-size: 15px" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="anchor-pane">
+                           <children>
+                              <SplitPane dividerPositions="0.5" layoutX="82.0" layoutY="54.0" orientation="VERTICAL" prefHeight="294.0" prefWidth="323.0" styleClass="anchor-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="anchor-pane">
+                                       <children>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fx:id="image2" fitHeight="200.0" fitWidth="200.0" layoutX="60.0" layoutY="40.0" onMouseClicked="#buildOwnPizzaClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0" >
+                                             <image>
+                                                 <Image url="@pic/menu/BuildYourOwn.png" />
+                                             </image>
+                                          </ImageView>
+                                           <Label prefHeight="90.0" prefWidth="90.0" text="Build your Own Pizza" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0" style="-fx-font-size: 15px" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-border-width: 0;" styleClass="anchor-pane">
+                                       <children>
+                                          <ImageView fx:id="image4" fitHeight="200.0" fitWidth="200.0" layoutX="60.0" layoutY="40.0" onMouseClicked="#storeOrderClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="20.0" >
+                                             <image>
+                                                 <Image url="@pic/menu/StoreOrder.png" />
+                                             </image></ImageView>
+                                           <Label prefHeight="90.0" prefWidth="90.0" text="Store Order" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0" style="-fx-font-size: 15px" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
