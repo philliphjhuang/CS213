@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafx_bank.controller.TransactionManagerController"
+            prefHeight="850.0" prefWidth="1250.0">
+    <Pane prefHeight="850.0" prefWidth="1250.0" styleClass="MenuBackground">
+        <HBox prefHeight="850.0" prefWidth="1250.0">
+            <VBox prefHeight="850.0" prefWidth="300.0" stylesheets="@MenuButton.css" spacing="100" style="-fx-background-color: #FF007F">
+                <Region prefHeight="10.0" />
+                <Button contentDisplay="CENTER" graphicTextGap="0.0" layoutY="100.0" mnemonicParsing="false"
+                        onAction="#openClose"       prefHeight="80.0" prefWidth="300.0" styleClass="MenuButton"
+                        text="Open/Close"       textAlignment="CENTER" textFill="WHITE" />
+
+                <Button contentDisplay="CENTER" graphicTextGap="0.0" layoutY="250.0" mnemonicParsing="false"
+                        onAction="#depositWithdraw" prefHeight="80.0" prefWidth="300.0" styleClass="MenuButton"
+                        text="Deposit/Withdraw" textAlignment="CENTER" textFill="WHITE" />
+
+                <Button contentDisplay="CENTER" graphicTextGap="0.0" layoutY="400.0" mnemonicParsing="false"
+                        onAction="#accountDatabaseTab" prefHeight="80.0" prefWidth="300.0" styleClass="MenuButton"
+                        text="Account Database" textAlignment="CENTER" textFill="WHITE" />
+
+                <Button contentDisplay="CENTER" graphicTextGap="0.0" layoutY="550.0" mnemonicParsing="false"
+                        onAction="#menuBar"    prefHeight="80.0" prefWidth="300.0" styleClass="MenuButton"
+                        text="Menu Bar"         textAlignment="CENTER" textFill="WHITE" />
+            </VBox>
+
+            <VBox prefHeight="839.0" prefWidth="949.0" alignment="CENTER">
+                <Text style="-fx-font-size: 30;" textAlignment="CENTER">
+                    Output History
+                </Text>
+                <TextArea fx:id="rightText" prefHeight="839.0" prefWidth="949.0" style="-fx-font-size: 20;-fx-background-color: #FFA500;"
+                          editable="false">
+                </TextArea>
+            </VBox>
+        </HBox>
+    </Pane>
+</AnchorPane>

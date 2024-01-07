@@ -1,0 +1,11 @@
+.MenuButton {
+    -fx-text-fill: black;
+    -fx-background-color: #FF007F;
+    -fx-font-size: 25;
+}
+.MenuButton:hover{
+    -fx-background-color: #800080;
+}
+.MenuBackground{
+    -fx-background-color: #FF007F;
+}
